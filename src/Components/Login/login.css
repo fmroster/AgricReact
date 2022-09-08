@@ -1,0 +1,151 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    overflow: hidden;
+}
+
+.login>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+    height: 400px;
+    padding-top: 60px;
+    padding: 25px;
+    border: var(--color-success) 3px solid;
+    border-radius: var(--border-radius-2);
+}
+
+form {
+    position: relative;
+    margin: 5rem auto;
+}
+
+.circle {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: -2.5rem;
+    right: 50%;
+    left: 43%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: var(--color-success);
+}
+
+.circle h1 {
+    width: 100%;
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.user-box {
+    position: relative;
+    width: 500px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--dark-grey);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 4rem;
+    border: none;
+    border: 2px solid var(--light-grey);
+    border-radius: var(--border-radius-1);
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 1rem;
+    font-size: 1.1rem;
+    color: var(--dark-grey);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box label i {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -2.5rem;
+    left: 0;
+    color: var(--);
+    font-size: 1rem;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit .register-btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-1);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 2px solid var(--color-success);
+    background: transparent;
+    transition: var(--trans2);
+}
+
+.submit button {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-1);
+    display: flex;
+    text-align: center;
+    width: 12rem;
+    gap: 1rem;
+    align-items: center;
+    border: 2px solid var(--light-grey);
+    background: transparent;
+    transition: var(--trans2);
+}
+
+.submit button h4,
+.submit button p {
+    width: 100%;
+    font-family: _light;
+    color: var(--grey);
+    transition: var(--trans2);
+}
+
+.submit .login-btn:hover {
+    background: var(--color-success);
+    border: 2px solid transparent;
+}
+
+.submit .register-btn:hover {
+    background: var(--light-grey);
+    border: 2px solid transparent;
+}
+
+.submit button:hover>h4,
+.submit button:hover>p {
+    color: #ffffff;
+}
